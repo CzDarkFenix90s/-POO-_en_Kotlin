@@ -1,0 +1,6 @@
+=== Ejercicio 3: Herencia ===
+Auto: Toyota Corolla - Año 2022 - Puertas: 4
+Motocicleta: Honda CBR500R - Año 2020 - Tipo de manubrio: Alto
+
+Explicación breve:
+La clase base Vehiculo define los atributos comunes. Auto y Motocicleta heredan esos datos y sobrescriben mostrarDatos() para agregar comportamientos específicos de cada subclase.

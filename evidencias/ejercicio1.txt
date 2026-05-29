@@ -1,0 +1,9 @@
+=== Ejercicio 1: Libro ===
+Libro: Cien años de soledad
+Autor: Gabriel García Márquez
+Año de publicación: 1967
+Número de páginas: 471
+¿Es antiguo? true
+
+Explicación breve:
+La clase Libro encapsula título, autor, año de publicación y páginas. El objeto libro1 demuestra cómo mostrar información y detectar si el libro es antiguo (año < 2000).

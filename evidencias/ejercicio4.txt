@@ -1,0 +1,7 @@
+=== Ejercicio 4: Polimorfismo ===
+Pago en efectivo procesado: $1250.75
+Pago con tarjeta aprobado: $1250.75
+Pago por transferencia recibido: $1250.75
+
+Explicación breve:
+La interfaz MetodoPago define procesarPago(). Cada implementación (PagoEfectivo, PagoTarjeta, PagoTransferencia) ejecuta la lógica con su propio mensaje, y la lista de métodos demuestra el polimorfismo.

@@ -1,0 +1,13 @@
+=== Ejercicio 5: Biblioteca ===
+Libro registrado: ID: 1 | Título: 1984 | Autor: George Orwell | Estado: disponible
+Libro registrado: ID: 2 | Título: El Hobbit | Autor: J.R.R. Tolkien | Estado: disponible
+Libros disponibles:
+ID: 1 | Título: 1984 | Autor: George Orwell | Estado: disponible
+ID: 2 | Título: El Hobbit | Autor: J.R.R. Tolkien | Estado: disponible
+Libro prestado: 1984
+El libro ya está prestado: 1984
+Libro devuelto: 1984
+Búsqueda encontrada: ID: 2 | Título: El Hobbit | Autor: J.R.R. Tolkien | Estado: disponible
+
+Explicación breve:
+El sistema Biblioteca usa una colección de libros. Cada LibroBiblioteca aplica encapsulamiento sobre su estado y valida préstamos/devoluciones para evitar inconsistencias.
