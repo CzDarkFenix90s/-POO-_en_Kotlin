@@ -35,10 +35,3 @@ Esta sección del proyecto contiene la implementación de diversos ejercicios pr
    *   **Implementación:** Un sistema de biblioteca para registrar, buscar y prestar libros, integrando todos los conceptos anteriores.
 
 ---
-
-### Cómo ejecutar el proyecto
-El punto de entrada principal se encuentra en `Main.kt`. Puedes ejecutarlo usando Gradle:
-
-```bash
-./gradlew run
-```
