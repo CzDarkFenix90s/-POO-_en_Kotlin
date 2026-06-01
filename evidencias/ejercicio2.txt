@@ -5,4 +5,4 @@ Precio final: 35.5
 Stock final: 12
 
 Explicación breve:
-La clase ProductoInventario mantiene precio y stock como atributos privados. Los métodos públicos consultan y modifican esos valores, evitando que se introduzcan precios negativos o stock inválido.
+La clase ProductoInventario mantiene precio y stock como atributos privados. Los métodos públicos consultan y modifican esos valores evitando que se introduzcan precios negativos o stock inválido.

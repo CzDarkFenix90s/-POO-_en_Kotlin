@@ -6,4 +6,4 @@ Número de páginas: 471
 ¿Es antiguo? true
 
 Explicación breve:
-La clase Libro encapsula título, autor, año de publicación y páginas. El objeto libro1 demuestra cómo mostrar información y detectar si el libro es antiguo (año < 2000).
+La clase Libro encapsula título, autor, año de publicación y páginas. El objeto libro1 demuestra cómo mostrar información y detectar si el libro es antiguo año < 2000.
