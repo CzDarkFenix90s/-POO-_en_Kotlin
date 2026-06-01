@@ -27,7 +27,6 @@ class ProductoInventario(
     }
 }
 
-// === FUNCIÓN MAIN PARA CORRER EL INVENTARIO ===
 fun main() {
     println("=== EJECUTANDO CONTROL DE INVENTARIO ===")
 

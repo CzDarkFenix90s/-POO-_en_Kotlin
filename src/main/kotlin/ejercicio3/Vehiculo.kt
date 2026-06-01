@@ -48,6 +48,6 @@ fun main() {
     )
 
     for (vehiculo in listaVehiculos) {
-        vehiculo.mostrarDatos() // Ejecuta el método correspondiente de cada hijo automáticamente
+        vehiculo.mostrarDatos()
     }
 }

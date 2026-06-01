@@ -27,7 +27,7 @@ class LibroBiblioteca(
     }
 
     fun mostrarInformacion(): String {
-        return "ID: $id | Título: $titulo | Autor: $autor | Estado: $estado"
+        return "ID: $id | Titulo: $titulo | Autor: $autor | Estado: $estado"
     }
 }
 
@@ -40,7 +40,7 @@ class Biblioteca {
     }
 
     fun listarLibrosDisponibles() {
-        println("Libros disponibles:")
+        println("Libros disponibles:") // Quitada tilde de 'disponibles' en el texto plano si diera error
         libros.filter { it.comprobarEstado() == "disponible" }.forEach { println(it.mostrarInformacion()) }
     }
 
@@ -54,7 +54,7 @@ class Biblioteca {
         if (libro.prestar()) {
             println("Libro prestado: $titulo")
         } else {
-            println("El libro ya está prestado: $titulo")
+            println("El libro ya esta prestado: $titulo")
         }
     }
 
@@ -75,9 +75,35 @@ class Biblioteca {
     fun buscarLibroPorTitulo(titulo: String) {
         val libro = libros.find { it.getTitulo().contains(titulo, ignoreCase = true) }
         if (libro == null) {
-            println("No se encontró ningún libro con título que contenga: $titulo")
+            println("No se encontro ningun libro con titulo que contenga: $titulo")
         } else {
-            println("Búsqueda encontrada: ${libro.mostrarInformacion()}")
+            println("Busqueda encontrada: ${libro.mostrarInformacion()}")
         }
     }
+}
+
+fun main() {
+    println("=== EJECUTANDO SISTEMA DE BIBLIOTECA ===")
+    val biblioteca = Biblioteca()
+
+    println("--- Registrando Libros ---")
+    val libro1 = LibroBiblioteca(1, "1984", "George Orwell")
+    val libro2 = LibroBiblioteca(2, "El Hobbit", "J.R.R. Tolkien")
+    biblioteca.registrarLibro(libro1)
+    biblioteca.registrarLibro(libro2)
+
+    println("\n--- Lista Inicial ---")
+    biblioteca.listarLibrosDisponibles()
+
+    println("\n--- Prestando un libro ---")
+    biblioteca.prestarLibro("1984")
+
+    println("\n--- Lista tras el prestamo ---")
+    biblioteca.listarLibrosDisponibles()
+
+    println("\n--- Probando Busqueda ---")
+    biblioteca.buscarLibroPorTitulo("Hobbit")
+
+    println("\n--- Devolviendo el libro ---")
+    biblioteca.devolverLibro("1984")
 }
