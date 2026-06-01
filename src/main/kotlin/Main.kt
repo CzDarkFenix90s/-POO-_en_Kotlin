@@ -1,3 +1,14 @@
+import ejercicio1.Libro
+import ejercicio2.ProductoInventario
+import ejercicio3.Auto
+import ejercicio3.Motocicleta
+import ejercicio4.MetodoPago
+import ejercicio4.PagoEfectivo
+import ejercicio4.PagoTarjeta
+import ejercicio4.PagoTransferencia
+import ejercicio5.Biblioteca
+import ejercicio5.LibroBiblioteca
+
 fun main() {
     println("=== Ejercicio 1: Libro ===")
     val libro1 = Libro("Cien años de soledad", "Gabriel García Márquez", 1967, 471)
@@ -24,7 +35,7 @@ fun main() {
     val metodosPago: List<MetodoPago> = listOf(
         PagoEfectivo(),
         PagoTarjeta(),
-        PagoTransferencia()
+        PagoTransferencia(),
     )
 
     metodosPago.forEach { metodo ->

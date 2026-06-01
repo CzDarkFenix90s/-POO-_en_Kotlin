@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "1.9.24"
+    application
 }
 
 repositories {
@@ -8,4 +9,8 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+}
+
+application {
+    mainClass.set("MainKt")
 }

@@ -1,3 +1,5 @@
+package ejercicio3
+
 open class Vehiculo(
     protected val marca: String,
     protected val modelo: String,
@@ -27,5 +29,25 @@ class Motocicleta(
 ) : Vehiculo(marca, modelo, anio) {
     override fun mostrarDatos() {
         println("Motocicleta: $marca $modelo - Año $anio - Tipo de manubrio: $tipoManubrio")
+    }
+}
+
+fun main() {
+    println("=== EJECUTANDO DATOS DE VEHÍCULOS ===")
+
+    val miAuto = Auto("Toyota", "Corolla", 2022, 4)
+    miAuto.mostrarDatos()
+
+    val miMoto = Motocicleta("Honda", "CB650R", 2023, "Deportivo")
+    miMoto.mostrarDatos()
+
+    println("\n--- Lista de Vehículos (Polimorfismo) ---")
+    val listaVehiculos: List<Vehiculo> = listOf(
+        Auto("Ford", "Mustang", 2021, 2),
+        Motocicleta("Yamaha", "MT-07", 2024, "Naked")
+    )
+
+    for (vehiculo in listaVehiculos) {
+        vehiculo.mostrarDatos() // Ejecuta el método correspondiente de cada hijo automáticamente
     }
 }

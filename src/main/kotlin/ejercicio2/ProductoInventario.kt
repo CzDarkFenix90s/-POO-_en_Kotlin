@@ -1,3 +1,5 @@
+package ejercicio2
+
 class ProductoInventario(
     private val codigo: String,
     private val nombre: String,
@@ -23,4 +25,26 @@ class ProductoInventario(
         require(nuevoPrecio >= 0) { "El precio no puede ser negativo." }
         precio = nuevoPrecio
     }
+}
+
+// === FUNCIÓN MAIN PARA CORRER EL INVENTARIO ===
+fun main() {
+    println("=== EJECUTANDO CONTROL DE INVENTARIO ===")
+
+    val producto = ProductoInventario("PROD-001", "Laptop Gamer", 1200.00, 10)
+    println("Producto registrado con éxito.")
+    println("Stock inicial: ${producto.consultarStock()} unidades")
+    println("Precio inicial: $${producto.consultarPrecio()}")
+
+    println("\n--- Recibiendo mercancía (Aumentando stock +5) ---")
+    producto.aumentarStock(5)
+    println("Nuevo stock: ${producto.consultarStock()} unidades")
+
+    println("\n--- Realizando venta (Disminuyendo stock -3) ---")
+    producto.disminuirStock(3)
+    println("Nuevo stock: ${producto.consultarStock()} unidades")
+
+    println("\n--- Aplicando cambio de precio ---")
+    producto.cambiarPrecio(1150.00)
+    println("Nuevo precio: $${producto.consultarPrecio()}")
 }
